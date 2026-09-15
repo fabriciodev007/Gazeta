@@ -2,6 +2,45 @@
 {% load static %}
 
 {% block content %}
- 
+  <!-- Container do Bootstrap integrado ao Grid -->
+    <div class="container my-5 jornal-grid">
+        
+        <!-- Manchete Principal (Ocupa 3 colunas) -->
+        <div class="area-manchete bg-light p-4 border border-dark">
+            <h1 class="display-4 fw-bold">Grande Manchete do Dia</h1>
+            <p class="lead">Este é o principal acontecimento do jornal, ganhando o maior destaque no topo esquerda.</p>
+        </div>
+
+        <!-- Coluna Lateral de Destaques (Ocupa 1 coluna vertical inteira) -->
+        <div class="area-lateral bg-dark text-white p-4">
+            <h3 class="h5 border-bottom pb-2">Últimas Notícias</h3>
+            <ul class="list-unstyled">
+                <li class="mb-3">⚡ Minuto 1: Trânsito parado na avenida principal.</li>
+                <li class="mb-3">⚡ Minuto 5: Previsão do tempo indica chuva.</li>
+                <li>⚡ Minuto 10: Bolsa de valores abre em alta.</li>
+            </ul>
+        </div>
+
+        <!-- Notícia Secundária 1 -->
+        <div class="area-sec-1 bg-light p-3 border">
+            <h5>Mundo</h5>
+            <p>Notícia internacional de menor impacto.</p>
+        </div>
+
+        <!-- Notícia Secundária 2 -->
+        <div class="area-sec-2 bg-light p-3 border">
+            <h5>Economia</h5>
+            <p>Mudanças nas taxas de juros locais.</p>
+        </div>
+
+        <!-- Notícia Secundária 3 -->
+        <div class="area-sec-3 bg-light p-3 border">
+            <h5>Esportes</h5>
+            <p>Resultados da rodada do campeonato regional.</p>
+        </div>
+
+       
+
+    </div>
     
 {% endblock %}
