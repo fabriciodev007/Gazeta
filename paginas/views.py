@@ -6,3 +6,5 @@ class IdexView(TemplateView):
 class AssinarView(TemplateView):
     template_name= 'assinatura.html'
     
+class ContatView(TemplateView):
+    template_name = 'contato.html'
